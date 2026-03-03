@@ -76,199 +76,14 @@
         <title>F1 Bingo Card Generator</title>
     </head>
     <body>
-        <!--==============================CODE FOR THE NAVBAR BEGIN==============================-->
-        <nav
-            class="navbar is-fixed-top is-spaced has-shadow"
-            role="navigation"
-            aria-label="main navigation"
-        >
-            <div class="navbar-brand">
-                <a class="navbar-item" href="/">
-                    <img id="logo" src="f1-tools-rec.png" alt="F1 tools" />
-                </a>
-                <a
-                    role="button"
-                    class="navbar-burger"
-                    aria-label="menu"
-                    aria-expanded="false"
-                    data-target="navbarBasicExample"
-                >
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                </a>
-            </div>
-            <div id="navbarBasicExample" class="navbar-menu">
-                <div class="navbar-start">
-                    <a class="navbar-item" href="#ABOUT"> About </a>
-                    <a class="navbar-item" href="#GENERATOR">
-                        F1 Bingo Card Generator
-                    </a>
-                    <a class="navbar-item" href="#POSSSQU">
-                        Possible Squares
-                    </a>
-                    <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-link" href="#"> More </a>
-                        <div class="navbar-dropdown">
-                            <a
-                                class="navbar-item"
-                                href="https://github.com/f1-tools"
-                                target="_blank"
-                            >
-                                Github
-                            </a>
-                            <a
-                                class="navbar-item"
-                                href="/discord"
-                                target="_blank"
-                            >
-                                Discord
-                            </a>
-                            <a
-                                class="navbar-item"
-                                href="mailto:f1-tools-contact@umich.edu"
-                                target="_blank"
-                            >
-                                Email
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <!--==============================CODE FOR THE NAVBAR END==============================-->
         <div id="EVERYTHING">
-            <!--==============================CODE FOR THE ABOUT SECTION START==============================-->
-            <section class="section">
-                <div id="ABOUT" class="sectionAnchor"></div>
-                <h1 class="title">About</h1>
-                <p>
-                    The F1 Bingo Card Generator is a tool to help you generate 
-                    bingo cards for the 2025 Formula 1 season in a matter of
-                    seconds. Every bingo card that is generated is in a random
-                    order, so you can play with your friends and family by
-                    asking them to generate a card as well. This tool was created
-                    because one of our developers was making F1 bingo cards for
-                    his friends and family, and he thought it would be a good
-                    idea to make a tool to help others do the same. Please visit
-                    the
-                    <a
-                        href="https://github.com/f1-tools/F1-Bingo-Card-Generator"
-                        target="_blank"
-                        >GitHub</a
-                    >
-                    page if you like our tool, GitHub stars are a great way to
-                    show your support. We also have a
-                    <a href="/discord" target="_blank">Discord</a> server, where
-                    you can ask questions or give feedback. 
-                </p>
-                <br>
-                <h2 class="title is-4">About the Generator</h2>
-                <p>
-                    The bingo card generator always puts the race starts square
-                    in the middle of the card. It then places the safety car,
-                    vsc, and red flag squares randomly around the card. The remaining 
-                    possible squares are then placed at random in the remaining 21 squares. 
-                    The generator will never place two of the same square on the same bingo card. 
-                    This means that if you generate more than one bingo card, it is highly
-                    unlikely that you will get the same card.
-                </p>
-                <br>
-                <div class="columns is-multiline">
-                    <div class="column is-2 card-min-width">
-                        <div class="card card-equal-height">
-                            <div class="card-content">
-                                <div class="media-content">
-                                    <p class="title is-4">Bingo Card Type</p>
-                                </div>
-                                <br>
-                                <div class="content">
-                                    You can generate either a single race bingo card or a season bingo card.
-                                    Single race bingo cards are designed to be used over the course of a single race.
-                                    Season bingo cards are designed to be used over the course of the entire season.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column is-2 card-min-width">
-                        <div class="card card-equal-height">
-                            <div class="card-content">
-                                <div class="media-content">
-                                    <p class="title is-4">Paper Size</p>
-                                </div>
-                                <br>
-                                <div class="content">
-                                    Basically, the size of the paper you want to print the bingo card on. 
-                                    Letter is the standard size for the United States and Canada. 
-                                    A4 is the standard size for the rest of the world.
-                                    Choose accordingly! Only really matters if you are printing the bingo card.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column is-2 card-min-width">
-                        <div class="card card-equal-height">
-                            <div class="card-content">
-                                <div class="media-content">
-                                    <p class="title is-4">Margins</p>
-                                </div>
-                                <br>
-                                <div class="content">
-                                    Whether you want small or large margins on the bingo card.
-                                    It is recommended to use large margins if you are printing the bingo card.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column is-2 card-min-width">
-                        <div class="card card-equal-height">
-                            <div class="card-content">
-                                <div class="media-content">
-                                    <p class="title is-4">Party Mode</p>
-                                    <p class="subtitle is-6">Warning: intensifies lag made by Number to Generate</p>
-                                </div>
-                                <br>
-                                <div class="content">
-                                    Have lots of friends?
-                                    Select Party Mode "On" to get 4 mini bingo cards per page.
-                                    This feature is good if you are planning to host a viewing party 
-                                    and want to give everyone a bingo card. 
-                                    Print the page and cut the cards out!
-                                    Also good if you just want a small and portable bingo card.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column is-2 card-min-width">
-                        <div class="card card-equal-height">
-                            <div class="card-content">
-                                <div class="media-content">
-                                    <p class="title is-4">Number to Generate</p>
-                                    <p class="subtitle is-6">Warning: high numbers cause lag</p>
-                                </div>
-                                <br>
-                                <div class="content">
-                                    How many bingo cards you want to generate. 
-                                    It should be noted that the more bingo cards you generate,
-                                    the longer it will take for the preview and download to load.
-                                    Selecting big numbers here can cause some long loading times.
-                                    To avoid this the absolute maximum is set to 10 (and yes even this is too much).
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--==============================CODE FOR THE ABOUT SECTION END==============================-->
+           
             <!--==============================CODE FOR THE BINGO CARD GENERATOR START==============================-->
             <section class="section">
                 <div id="GENERATOR" class="sectionAnchor"></div>
                 <h1 class="title">F1 Bingo Card Generator</h1>
-                <h2 class="subtitle">
-                    Select your options and click generate to get your bingo card!
-                </h2>
                 <div class="container">
-                    <div class="box">
+                    <!-- <div class="box">
                         <h3 class="title is-4">F1BingoCardInator3001</h3>
                         <div class="columns">
                             <div class="column is-one-fifth">
@@ -277,7 +92,6 @@
                             <div class="column">
                                 <div class="select is-rounded">
                                     <select id="cardType">
-                                        <option>Race</option>
                                         <option>Season</option>
                                     </select>
                                 </div>
@@ -342,7 +156,7 @@
                                     </select>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="control">
                             <button class="button is-danger my-2" id="generate">
                                 Generate
